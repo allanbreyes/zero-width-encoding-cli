@@ -1,6 +1,8 @@
-# zero-width-encoding-cli
+# zero-width-encoding-cli (`zwe`)
 
-A **Node.js** command-line application to encode and decode messages encoded
+[![npm version](https://badge.fury.io/js/zero-width-encoding-cli.svg)](https://badge.fury.io/js/zero-width-encoding-cli)
+
+A **Node.js** command-line application (`zwe`) to encode and decode messages 
 with zero-width characters. Built off of [umpox/zero-width-detection][original]
 
 ## Installation
