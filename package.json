@@ -1,10 +1,11 @@
 {
   "name": "zero-width-encoding-cli",
   "version": "0.1.0",
+  "license": "MIT",
   "dependencies": {
     "commander": "^2.15.1"
   },
   "bin": {
-    "zero": "./src/index.js"
+    "zwe": "./src/index.js"
   }
 }
