@@ -1,7 +1,7 @@
 const zeroPad = num => '00000000'.slice(String(num).length) + num;
 
-const textToBinary = username => (
-  username.split('').map(char => zeroPad(char.charCodeAt(0).toString(2))).join(' ')
+const textToBinary = string => (
+  string.split('').map(char => zeroPad(char.charCodeAt(0).toString(2))).join(' ')
 );
 
 const binaryToZeroWidth = binary => (
@@ -16,8 +16,8 @@ const binaryToZeroWidth = binary => (
   }).join('﻿') // invisible &#65279;
 );
 
-export default (username) => {
-  const binaryUsername = textToBinary(username);
-  const zeroWidthUsername = binaryToZeroWidth(binaryUsername);
-  return zeroWidthUsername;
+module.exports = (plaintext) => {
+  const binary = textToBinary(plaintext);
+  const encoding = binaryToZeroWidth(binary);
+  return encoding;
 };
